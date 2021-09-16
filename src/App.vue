@@ -3,22 +3,28 @@
 </template>
 
 <script>
-import FolderView from './components/FolderView.vue'
-import data from './data/list';
+import FolderView from "./components/FolderView.vue";
+import data from "./data/list";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    FolderView
+    FolderView,
   },
-  data: () => data
-}
+  data: () => data,
+};
 </script>
 
 <style lang="scss">
+.page-body {
+  background-color: Gainsboro;
+  margin: 0;
+  padding: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 30px;
 }
 </style>
